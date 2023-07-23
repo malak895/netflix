@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "showtime": {
+    "sign": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/showtime/browser",
+            "outputPath": "dist/sign",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -64,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "showtime:build:production"
+              "browserTarget": "sign:build:production"
             },
             "development": {
-              "browserTarget": "showtime:build:development"
+              "browserTarget": "sign:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -75,7 +75,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "showtime:build"
+            "browserTarget": "sign:build"
           }
         },
         "test": {
@@ -94,11 +94,14 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
   },
   "cli": {
-    "analytics": "a5a8b959-7417-4ffa-9924-40ac0c91b467"
+    "analytics": "c432b9ce-2af3-4ece-837f-a9bf8b208a5e"
   }
 }
