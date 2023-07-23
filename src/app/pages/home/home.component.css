@@ -1,3 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #000000;
+    overflow-x: hidden;
+}
+
 .carousel-inner
 {
     height: 700px;
