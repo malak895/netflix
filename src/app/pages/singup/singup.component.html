@@ -1,0 +1,29 @@
+<body>
+    <a class="logo" href="https://www.netflix.com/" target="_blank"><img src="https://bit.ly/2VdIFUK"/></a>
+    <form class="login"  method="GET" action="login" (ngSubmit)="login()" #f="ngForm" >
+      <h1 class="login__title">Sign In</h1>
+      <div class="login__group">
+        <input class="login__group__input" type="text"   [(ngModel)]="email" [ngModelOptions]="{standalone: true}"  id="stpassword" 
+        autofocus required>
+        <label class="login__group__label">Enter Email</label>
+      
+      </div>
+    
+      <div class="login__group">
+        <input class="login__group__input" type="password" [(ngModel)]="password" [ngModelOptions]="{standalone: true}" id="stname " 
+        required >
+        <label class="login__group__label">Password</label>
+      </div>
+      <button class="login__sign-in" type="submit" routerLink ="/home" > Sign In</button>
+      <input type="checkbox" id="rememberMeCheckbox" checked>
+      <div class="login__secondary-cta">
+        <a class="login__secondary-cta__text" href="#">Remember me</a>
+        <a class="login__secondary-cta__text login__secondary-cta__text--need-help" href="#">Need help?</a>
+      </div>
+      <div class="checkbox"></div>
+      <div class="sign__up">
+        <p>New to Netflix?<a href="/signin">Sign up now.</a></p>
+      </div>
+    </form>
+  </body>
+  

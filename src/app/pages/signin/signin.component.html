@@ -1,0 +1,28 @@
+<body>
+    <a class="logo" href="https://www.netflix.com/" target="_blank"><img src="https://bit.ly/2VdIFUK"/></a>
+    <form class="login" (ngSubmit)="register()" >
+      <h1 class="login__title">Sign In</h1>
+      <div class="login__group">
+        <input class="login__group__input" [(ngModel)]="firstname" [ngModelOptions]="{standalone: true}" class="form-control" id="stname"  placeholder="Enter UserName"
+        autofocus required>
+         <label class="login__group__label"></label>
+      
+      </div>
+      <div class="login__group">
+        <input class="login__group__input"  [(ngModel)]="email" [ngModelOptions]="{standalone: true}" class="form-control" id="course" placeholder="Enter Email"
+        autofocus required>
+       
+      
+      </div>
+    
+      <div class="login__group">
+        <input class="login__group__input" type="password" [(ngModel)]="password" [ngModelOptions]="{standalone: true}" class="form-control" id="fee"  id="passwordForm"placeholder="Enter Password"
+        required >
+
+      </div>
+      <button class="login__sign-in" type="submit" ><a href="/home"></a> <h1>Sign In</h1></button>
+     
+     
+    </form>
+  </body>
+  
